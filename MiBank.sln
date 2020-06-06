@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiBank", "MiBank\MiBank.csproj", "{0698E23C-2B12-41C8-A04B-47E357385459}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0698E23C-2B12-41C8-A04B-47E357385459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0698E23C-2B12-41C8-A04B-47E357385459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0698E23C-2B12-41C8-A04B-47E357385459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0698E23C-2B12-41C8-A04B-47E357385459}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FDA50D5-F917-457C-99C6-9FAA5BAC6A65}
+	EndGlobalSection
+EndGlobal
