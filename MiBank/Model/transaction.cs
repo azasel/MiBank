@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MiBank {
 
-    class transaction {
+    public class transaction {
 
         private int transactionID;
         private int customerID;
@@ -20,5 +20,8 @@ namespace MiBank {
         public transaction(char type, double amount, string method, DateTime dateTime, int customerID, int accNumber) {
 
         }
+
+
+       
     }
 }

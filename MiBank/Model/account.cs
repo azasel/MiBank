@@ -6,33 +6,21 @@ using System.Text;
 
 
 namespace MiBank{
-    enum accountType { checking, savings };
+    public enum accountType { savings, checking  };
     
 
-    abstract class account{
+    public abstract class account{
 
-        private float _balance;
-        private int _accNumber;
-        private int _customerID;
-        private accountType _accType;
-        private double _freeTrans;
-       // private Hashtable _type = new Hashtable() { { "W", "Withdrawal" }, { "D", "Deposit" }, { "T", "Transfer" }, { "S", "Service Charge" } };
-        private List<transaction> _transactions ;
-        private int _nextTransactionID;
+        public int _accNumber { get; set; }
+        public accountType _accType { get; set; }
+        public float _balance { get; set; }
+        public int _customerID { get; set; }
+        public double _freeTrans { get; set; }
+        public List<transaction> _transactions { get; set; }
+        public int _nextTransactionID { get; set; }
 
 
-        public string deposit(double amount) {
-            
-            if (amount <= 0) {
-                throw new ArgumentOutOfRangeException(nameof(amount), "Amount of deposit must be positive");
-            }
-            //char type, double amount, string method, DateTime dateTime, int customerID, int accNumber
-            var deposit = new transaction('D',amount,"banking", DateTime.Now, _customerID, _accNumber);
-            _transactions.Add(deposit);
-
-            return "Deposit Made Successfully";
-        }
-
+        public abstract string deposit(double amount);
         public abstract string withdrawal(float amount);
         public abstract string atmWithdrawal(float amount);
         public abstract string statement(int accountNumber);
